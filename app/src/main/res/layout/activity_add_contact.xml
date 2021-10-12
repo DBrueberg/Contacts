@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".AddContact" android:layout_margin="20dp"
+        android:id="@+id/addScrollView">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:id="@+id/addContraintLayout">
+        <TextView
+                android:text="@string/addNameTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" android:id="@+id/addNameTextView"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text="@string/addNameEditTextView"
+                android:ems="10"
+                android:id="@+id/addNameEditTextView" android:autofillHints=".AUTOFILL_HINT_PERSON_NAME"
+                android:hint="@string/addNameEditTextHint"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/addNameTextView"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        <TextView
+                android:text="@string/addPhoneTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" android:id="@+id/addPhoneTextView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/addNameEditTextView"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="10sp"/>
+        <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:ems="10"
+                android:id="@+id/addPhoneEditTextView" android:autofillHints=".AUTOFILL_HINT_PHONE"
+                android:hint="@string/addPhoneEditTextHint"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/addPhoneTextView"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        <TextView
+                android:text="@string/addEmailTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" android:id="@+id/addEmailTextView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/addPhoneEditTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="10sp"/>
+        <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/addEmailEditTextView" android:autofillHints=".AUTOFILL_HINT_EMAIL_ADDRESS"
+                android:hint="@string/addEmailEditTextHint"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/addEmailTextView"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        <TextView
+                android:text="@string/addAddressTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" android:id="@+id/addAddressTextView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/addEmailEditTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="10sp"/>
+        <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPostalAddress"
+                android:ems="10"
+                android:id="@+id/addAddressEditTextView" android:autofillHints=".AUTOFILL_HINT_POSTAL_ADDRESS"
+                android:hint="@string/addAddressEditTextHint"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/addAddressTextView"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        <TextView
+                android:text="@string/addNotesTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" android:id="@+id/addNotesTextView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/addAddressEditTextView"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="10sp"/>
+        <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text="@string/addNameEditTextView"
+                android:ems="10"
+                android:id="@+id/addNotesEditTextView" android:autofillHints="notes"
+                android:hint="@string/addNotesEditTextHint"
+                app:layout_constraintTop_toBottomOf="@+id/addNotesTextView"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+        />
+
+        <Button
+                android:text="@string/addSaveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/addSaveButton"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBaseline_toBaselineOf="@+id/addCancelButton"
+                app:layout_constraintEnd_toStartOf="@+id/addCancelButton"/>
+        <Button
+                android:text="@string/addCancelButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/addCancelButton"
+                app:layout_constraintTop_toBottomOf="@+id/addNotesEditTextView"
+                app:layout_constraintStart_toEndOf="@+id/addSaveButton" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="40sp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

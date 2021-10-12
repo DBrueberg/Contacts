@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Contacts</string>
+    <string name="detailNameEditTextView"></string>
+    <string name="detailCallButton">Call</string>
+    <string name="detailEmailTextView">Email</string>
+    <string name="detailAddressTextView">Address</string>
+    <string name="detailUpdateButton">Update</string>
+    <string name="detailPhoneTextView">Phone</string>
+    <string name="detailNameTextView">Name</string>
+    <string name="detailNameEditTextHint">Name</string>
+    <string name="detailPhoneEditTextHint">Phone Number</string>
+    <string name="detailEmailAddressEditTextHint">Email Address</string>
+    <string name="detailAddressEditTextHint">Address</string>
+    <string name="detailEmailButton">Email</string>
+    <string name="detailNotesEditTextView"></string>
+    <string name="detailNotesTextView">Notes</string>
+    <string name="addNameEditTextView"></string>
+    <string name="addNameTextView">Name</string>
+    <string name="addEmailTextView">Email</string>
+    <string name="addNotesTextView">Notes</string>
+    <string name="addPhoneTextView">Phone</string>
+    <string name="addAddressTextView">Address</string>
+    <string name="addSaveButton">Save</string>
+    <string name="addCancelButton">Cancel</string>
+    <string name="detailNotesEditTextHint">Notes</string>
+    <string name="addNameEditTextHint">Name</string>
+    <string name="addPhoneEditTextHint">Phone</string>
+    <string name="addEmailEditTextHint">Email</string>
+    <string name="addAddressEditTextHint">Address</string>
+    <string name="addNotesEditTextHint">Notes</string>
+    <string name="mainFABContentDescription">TODO</string>
+    <string name="todo">TODO</string>
+</resources>
