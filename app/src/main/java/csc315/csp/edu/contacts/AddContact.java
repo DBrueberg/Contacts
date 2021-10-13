@@ -42,7 +42,7 @@ public class AddContact extends AppCompatActivity {
 
         // Starting up a database instance that will be used to access the
         // database
-        db = DatabaseHelper.getInstance(this);
+        db = DatabaseHelper.getInstance(getApplicationContext());
 
         // Initializing a reference to the saveButton Button object that will
         // be used to create a listener

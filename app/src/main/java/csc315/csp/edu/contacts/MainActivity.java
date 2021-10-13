@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Starting up a database instance that will be used to access the
         // database
-        dbHelper = DatabaseHelper.getInstance(this);
+        dbHelper = DatabaseHelper.getInstance(getApplicationContext());
 
         // Retrieving all the contacts stored in the database
         contactList = dbHelper.getAllContacts();
